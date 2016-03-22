@@ -1,0 +1,23 @@
+.load-anim{
+    
+    
+position: absolute;
+width: 100%;
+z-index: 800;
+height: 100%;
+background-color: rgb(240, 240, 240);
+opacity: .8;
+    display:none;
+    
+}
+
+.loader-icon-margin{
+    margin-top: 20%;   
+    
+    
+}
+.complete-color{
+    
+    color:#0aa699;
+}
+

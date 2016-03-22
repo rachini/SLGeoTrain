@@ -8,8 +8,10 @@ $config['APPLICATION_MAIN_TITLE']	= "SLGeoTrain ";
 $config['LOGIN_OPTION']	= 1;
 
 
-//login Type
+//User Types
 $config['ADMIN']= 1;
+$config['TECHNICAL_OFFICERS']=2;
+$config['ALL']=3;
 
 
 $config['MAILBOX']             = "{203.143.14.246:143/notls}";
