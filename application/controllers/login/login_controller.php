@@ -25,7 +25,6 @@ class Login_controller extends CI_Controller {
     function __construct() {
         parent::__construct();
 
-        
         $this->load->model('user/user_model');
         $this->load->model('user/user_service');
         $this->load->library("settings_option_handler");
@@ -33,6 +32,7 @@ class Login_controller extends CI_Controller {
     }
 
     function index() {
+        
        if ($this->session->userdata('USER_LOGGED_IN')) {
             redirect(base_url() . 'index.php/dashboard/dashboard_controller/');
 
@@ -79,25 +79,7 @@ class Login_controller extends CI_Controller {
  
         }
 
-        // 3 = Corporate Email authentication
-//        if ($login_option == 3) {
-//
-//
-//            $user_model->set_user_email($email);
-//            $user_model->set_user_password(md5($this->input->post('login_password', TRUE))); // password md 5 change
-//
-//            $mailServer = $user_service->get_server_by_email($user_model);
-//
-//            
-//
-//            if ($mailServer == 1) {
-//                $logged_user_result = $this->authenticate_user_email($user_model, $this->config->item('MAILBOX'));
-//            } else if ($mailServer == 2) {
-//                $logged_user_result = $this->authenticate_user_email($user_model, $this->config->item('MAILBOX2'));
-//            } else {
-//                $logged_user_result = FALSE;
-//            }
-//        }
+        
 
 
 
@@ -108,10 +90,7 @@ class Login_controller extends CI_Controller {
           
             $logged_user_details = $user_service->authenticate_user($user_model);
 
-
-
-
-            if (count($logged_user_details) == 0) {
+                if (count($logged_user_details) == 0) {
 
                 echo 0;
             } else {
@@ -127,10 +106,6 @@ class Login_controller extends CI_Controller {
                 $this->session->set_userdata('USER_FIRST', '1'); //check first time log in and redirect to welcome page
                 $this->session->set_userdata('USER_NAME', $logged_user_details->user_name);            
                 $this->session->set_userdata('USER_EMAIL', $logged_user_details->user_email);
-                $this->session->set_userdata('USER_PROPIC', $logged_user_details->user_avatar);
-                $this->session->set_userdata('USER_COVERPIC', $logged_user_details->user_cover_image);
-                $this->session->set_userdata('USER_JOB', $logged_user_details->user_job);
-                $this->session->set_userdata('USER_COMPANY_NAME', $logged_user_details->user_company_name);               
                 $this->session->set_userdata('USER_ONLINE', 'Y');
                 $this->session->set_userdata('USER_LOGGED_IN', 'TRUE');
  
@@ -141,16 +116,10 @@ class Login_controller extends CI_Controller {
             }
         } else {
             echo 0;
-        }// if($logged_user_result){
+        }
     }
 
-//    function get_email_user($usermodel) {
-//        $username_arr = explode('@', $usermodel->getEmail());
-//
-//
-//        $this->username = $username_arr[0];
-//        return $this->username;
-//    }
+
 
     function logout() {
 
@@ -166,27 +135,4 @@ class Login_controller extends CI_Controller {
         redirect(site_url() . '/login/login_controller');
     }
 
-    
-//    function authenticate_user_email($user_model, $mail_box) {
-//
-        // imap_timeout(IMAP_OPENTIMEOUT,10);
-//        $conn = imap_open($mailbox, $this->getEmailUser($usermodel), $usermodel->getPassword(), null) or die();
-//
-//        if ($conn) {
-//            $result = TRUE;
-//        } else {
-//            $result = FALSE;
-//        }
-//
-//
-//        imap_close($conn);
-//        $result = TRUE;
-//
-//        return $result;
-//    }
-
-    
-
-    
-
-}
+  }
