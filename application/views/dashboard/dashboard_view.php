@@ -32,15 +32,15 @@
                     map: map,
                     title2: 'Maradana'
                 });
-                var marker3 = new google.maps.Marker({
-                    position: {lat: 6.9375, lng: 79.8792},
-                    map: map,
-                    title3: 'Dematagoda'
-                });
+//                var marker3 = new google.maps.Marker({
+//                    position: {lat: 6.9375, lng: 79.8792},
+//                    map: map,
+//                    title3: 'Dematagoda'
+//                });
 
                 marker.setMap(map);
                 marker2.setMap(map);
-                marker3.setMap(map);
+//                marker3.setMap(map);
             }
 
 
