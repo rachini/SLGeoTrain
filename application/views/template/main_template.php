@@ -358,7 +358,7 @@
 
             <!-- BEGIN CUSTOM JS -->
             <script src="<?php echo base_url(); ?>application_resources/custom_js/custom_login.js" type="text/javascript"></script>
-<!--            <script src="<?php echo base_url(); ?>application_resources/custom_js/custom_user_profile.js" type="text/javascript"></script>-->
+            <script src="<?php echo base_url(); ?>application_resources/custom_js/custom_user_profile.js" type="text/javascript"></script>
             <script src="<?php echo base_url(); ?>application_resources/custom_js/custom_statistics.js" type="text/javascript"></script>
             <script src="<?php echo base_url(); ?>application_resources/custom_js/custom_user.js" type="text/javascript"></script>
 <!--            <script src="<?php echo base_url(); ?>application_resources/custom_js/custom_file_type.js" type="text/javascript"></script>

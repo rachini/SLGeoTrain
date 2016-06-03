@@ -7,6 +7,10 @@ class User_model extends CI_Model{
     var $user_lname;
     var $user_password;
     var $user_email;
+    var $user_type;
+    var $user_job;
+    var $user_bday;
+    var $user_contact;
     var $user_avatar;
     var $user_cover_image;
     var $is_online;
@@ -38,7 +42,24 @@ class User_model extends CI_Model{
     public function get_user_email() {
         return $this->user_email;
     }
+    
+    public function get_user_type() {
+        return $this->user_type;
+    }
 
+    public function get_user_job() {
+        return $this->user_job;
+    }
+
+    public function get_user_bday() {
+        return $this->user_bday;
+    }
+
+    public function get_user_contact() {
+        return $this->user_contact;
+    }
+
+    
     public function get_user_avatar() {
         return $this->user_avatar;
     }
@@ -86,7 +107,24 @@ class User_model extends CI_Model{
     public function set_user_email($user_email) {
         $this->user_email = $user_email;
     }
+    
+    public function set_user_type($user_type) {
+        $this->user_type = $user_type;
+    }
 
+    public function set_user_job($user_job) {
+        $this->user_job = $user_job;
+    }
+
+    public function set_user_bday($user_bday) {
+        $this->user_bday = $user_bday;
+    }
+
+    public function set_user_contact($user_contact) {
+        $this->user_contact = $user_contact;
+    }
+
+    
     public function set_user_avatar($user_avatar) {
         $this->user_avatar = $user_avatar;
     }

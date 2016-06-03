@@ -7,6 +7,8 @@ class User_controller extends CI_Controller {
 
     function __construct() {
         parent::__construct();
+        
+        
 
             $this->load->model('user/user_model');
             $this->load->model('user/user_service');
@@ -22,6 +24,8 @@ class User_controller extends CI_Controller {
         $partials = array('content' => 'user/manage_user_view');
         $this->template->load('template/main_template', $partials, $data);
     }
+    
+    
 
    
     
@@ -32,6 +36,8 @@ class User_controller extends CI_Controller {
     
   
 }
+
+
 
 ?>
 

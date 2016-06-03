@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 11, 2016 at 07:55 AM
+-- Generation Time: May 22, 2016 at 06:44 PM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -87,7 +87,7 @@ CREATE TABLE IF NOT EXISTS `settings` (
   `setting_type` enum('c','r','d','t') CHARACTER SET latin1 NOT NULL,
   `added_date` datetime NOT NULL,
   PRIMARY KEY (`setting_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `settings`
@@ -158,7 +158,7 @@ CREATE TABLE IF NOT EXISTS `statistics` (
   `ip` varchar(300) NOT NULL,
   `browser` varchar(300) NOT NULL,
   PRIMARY KEY (`statistics_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=448 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=528 ;
 
 --
 -- Dumping data for table `statistics`
@@ -612,7 +612,88 @@ INSERT INTO `statistics` (`statistics_id`, `user_id`, `action`, `date`, `uri`, `
 (444, 0, 'index', 1462945712, 'login/login_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36'),
 (445, 0, 'index', 1462945773, 'login/login_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36'),
 (446, 0, 'authenticate_user', 1462945794, 'login/login_controller/authenticate_user', '{"login_username":"rachini94perera@gmail.com","login_password":"abc123@#"}', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36'),
-(447, 0, 'authenticate_user', 1462945802, 'login/login_controller/authenticate_user', '{"login_username":"rachini94perera@gmail.com","login_password":"abc123@#"}', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36');
+(447, 0, 'authenticate_user', 1462945802, 'login/login_controller/authenticate_user', '{"login_username":"rachini94perera@gmail.com","login_password":"abc123@#"}', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36'),
+(448, 0, 'index', 1462946137, 'login/login_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36'),
+(449, 0, 'index', 1462946137, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36'),
+(450, 0, 'logout', 1462946164, 'login/login_controller/logout', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36'),
+(451, 0, 'index', 1462946164, 'login/login_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36'),
+(452, 0, 'authenticate_user', 1462946183, 'login/login_controller/authenticate_user', '{"login_username":"rachini94perera@gmail.com","login_password":"abc123@#"}', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36'),
+(453, 0, 'index', 1462946193, 'login/login_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36'),
+(454, 0, 'index', 1462946193, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36'),
+(455, 0, 'logout', 1462946206, 'login/login_controller/logout', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36'),
+(456, 0, 'index', 1462946206, 'login/login_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36'),
+(457, 0, 'index', 1462946213, 'login/login_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36'),
+(458, 0, 'index', 1462946215, 'login/login_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36'),
+(459, 0, 'authenticate_user', 1462946263, 'login/login_controller/authenticate_user', '{"login_username":"rachini94perera@gmail.com","login_password":"abc123@#"}', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36'),
+(460, 0, 'login_controller', 1463416348, '', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(461, 0, 'authenticate_user', 1463418830, 'login/login_controller/authenticate_user', '{"login_username":"rachini94perera@gmail.com","login_password":"abc123@#"}', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(462, 0, 'login_controller', 1463423155, '', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(463, 0, 'authenticate_user', 1463423193, 'login/login_controller/authenticate_user', '{"login_username":"rachini94perera@gmail.com","login_password":"abc23@#"}', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(464, 0, 'login_controller', 1463425774, '', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(465, 0, 'login_controller', 1463425777, '', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(466, 0, 'authenticate_user', 1463425817, 'login/login_controller/authenticate_user', '{"login_username":"rachini94perera@gmail.com","login_password":"abc123@#"}', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(467, 0, 'login_controller', 1463425977, '', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(468, 0, 'index', 1463425978, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(469, 0, 'index', 1463425985, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(470, 0, 'view_profile', 1463426000, 'user/user_profile_controller/view_profile', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(471, 0, 'logout', 1463426008, 'login/login_controller/logout', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(472, 0, 'index', 1463426008, 'login/login_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(473, 0, 'index', 1463426010, 'login/login_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(474, 0, 'authenticate_user', 1463426030, 'login/login_controller/authenticate_user', '{"login_username":"rachini94perera@gmail.com","login_password":"abc123@#"}', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(475, 0, 'index', 1463426031, 'login/login_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(476, 0, 'index', 1463426031, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(477, 0, 'index', 1463426033, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(478, 0, 'index', 1463426163, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(479, 0, 'index', 1463426169, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(480, 0, 'index', 1463426331, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(481, 0, 'index', 1463426335, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(482, 0, 'index', 1463426637, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(483, 0, 'index', 1463426641, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(484, 0, 'index', 1463426805, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(485, 0, 'index', 1463426808, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(486, 0, 'login_controller', 1463666854, '', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(487, 0, 'login_controller', 1463666859, '', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(488, 0, 'authenticate_user', 1463666897, 'login/login_controller/authenticate_user', '{"login_username":"rachini94perera@gmail.com","login_password":"abc123@#"}', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(489, 0, 'index', 1463666898, 'login/login_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(490, 0, 'index', 1463666898, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(491, 0, 'index', 1463666906, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(492, 0, 'index', 1463667008, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(493, 0, 'index', 1463667013, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(494, 0, 'index', 1463667178, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(495, 0, 'index', 1463667182, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(496, 0, 'index', 1463667196, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(497, 0, 'index', 1463667197, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(498, 0, 'index', 1463667637, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(499, 0, 'index', 1463667642, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(500, 0, 'view_profile', 1463667720, 'user/user_profile_controller/view_profile', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(501, 0, 'upload_user_avatar', 1463667755, 'user/user_profile_controller/upload_user_avatar', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(502, 0, 'update_user_avatar', 1463667755, 'user/user_profile_controller/update_user_avatar', '{"user_avatar":"user_avatar1463667755-Chrysanthemum.jpg","user_id":"1"}', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(503, 0, 'upload_user_cover_pic', 1463667760, 'user/user_profile_controller/upload_user_cover_pic', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(504, 0, 'update_user_cover_image', 1463667760, 'user/user_profile_controller/update_user_cover_image', '{"user_cover_image":"cover_pic1463667760-Tulips.jpg","user_id":"1"}', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(505, 0, 'index', 1463667782, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(506, 0, 'index', 1463667988, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(507, 0, 'index', 1463667992, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(508, 0, 'index', 1463668209, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(509, 0, 'index', 1463668219, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(510, 0, 'index', 1463668283, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(511, 0, 'index', 1463668287, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(512, 0, 'login_controller', 1463885339, '', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(513, 0, 'login_controller', 1463885343, '', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(514, 0, 'authenticate_user', 1463885369, 'login/login_controller/authenticate_user', '{"login_username":"rachini94perera@gmil.com","login_password":"abc123@#"}', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(515, 0, 'login_controller', 1463885402, '', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(516, 0, 'login_controller', 1463885402, '', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(517, 0, 'authenticate_user', 1463885422, 'login/login_controller/authenticate_user', '{"login_username":"rachini94perera@gmail.com","login_password":"abc123@#"}', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(518, 0, 'index', 1463885422, 'login/login_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36');
+INSERT INTO `statistics` (`statistics_id`, `user_id`, `action`, `date`, `uri`, `post_data`, `ip`, `browser`) VALUES
+(519, 0, 'index', 1463885422, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(520, 0, 'index', 1463885428, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(521, 0, 'view_profile', 1463885432, 'user/user_profile_controller/view_profile', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(522, 0, 'view_profile', 1463885434, 'user/user_profile_controller/view_profile', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(523, 0, 'view_profile', 1463934799, 'user/user_profile_controller/view_profile', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(524, 0, 'view_profile', 1463934831, 'user/user_profile_controller/view_profile', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(525, 0, 'view_profile', 1463934833, 'user/user_profile_controller/view_profile', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(526, 0, 'view_profile', 1463935123, 'user/user_profile_controller/view_profile', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(527, 0, 'view_profile', 1463935125, 'user/user_profile_controller/view_profile', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36');
 
 -- --------------------------------------------------------
 
@@ -648,6 +729,8 @@ CREATE TABLE IF NOT EXISTS `user` (
   `user_email` varchar(100) NOT NULL,
   `user_type` varchar(30) NOT NULL,
   `user_job` varchar(100) NOT NULL,
+  `user_bday` date DEFAULT NULL,
+  `user_contact` varchar(50) DEFAULT NULL,
   `user_avatar` varchar(100) DEFAULT NULL,
   `user_cover_image` varchar(400) DEFAULT NULL,
   `is_online` enum('Y','N') DEFAULT NULL COMMENT 'N',
@@ -662,11 +745,11 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`user_id`, `user_fname`, `user_lname`, `user_password`, `user_email`, `user_type`, `user_job`, `user_avatar`, `user_cover_image`, `is_online`, `del_ind`, `added_date`, `updated_by`, `updated_date`) VALUES
-(1, 'Rachini', 'Perera', 'c4961b067d274050e43e26beb9d7d19c', 'rachini94perera@gmail.com', '', 'Technical Officer', 'user_avatar1453223844-Penguins.jpg', 'cover_pic1453223854-Chrysanthemum.jpg', 'Y', '1', '2015-12-17 18:30:00', NULL, NULL),
-(2, 'Sanali ', 'Weerasinghe', 'c4961b067d274050e43e26beb9d7d19c', 'sanali@gmail.com', '', 'Technical Officer', 'user_avatar1453224848-Koala.jpg', 'cover_pic1453224843-Hydrangeas.jpg', 'N', '1', '2015-12-17 18:30:00', NULL, NULL),
-(3, 'Tharindi', 'Perera', 'c4961b067d274050e43e26beb9d7d19c', 'tharindi@gmail.com', '', 'Technical Officer', 'user_avatar1453224953-Hydrangeas.jpg', 'cover_pic1453224946-Lighthouse.jpg', 'N', '1', '2015-12-17 18:30:00', NULL, NULL),
-(4, 'Lumesha', 'Perera', 'c4961b067d274050e43e26beb9d7d19c', 'lumesha@gmail.com', '', 'Technical Officer', 'user_avatar1453224891-Chrysanthemum.jpg', 'cover_pic1453224886-Tulips.jpg', 'N', '1', '2015-12-17 18:30:00', NULL, NULL);
+INSERT INTO `user` (`user_id`, `user_fname`, `user_lname`, `user_password`, `user_email`, `user_type`, `user_job`, `user_bday`, `user_contact`, `user_avatar`, `user_cover_image`, `is_online`, `del_ind`, `added_date`, `updated_by`, `updated_date`) VALUES
+(1, 'Rachini', 'Perera', 'c4961b067d274050e43e26beb9d7d19c', 'rachini94perera@gmail.com', '3', 'Technical Officer', '1994-01-24', '0712232323', 'user_avatar1463667755-Chrysanthemum.jpg', 'cover_pic1463667760-Tulips.jpg', 'Y', '1', '2015-12-17 18:30:00', NULL, NULL),
+(2, 'Sanali ', 'Weerasinghe', 'c4961b067d274050e43e26beb9d7d19c', 'sanali@gmail.com', '3', 'Technical Officer', '1992-04-21', '0777234567', 'user_avatar1453224848-Koala.jpg', 'cover_pic1453224843-Hydrangeas.jpg', 'N', '1', '2015-12-17 18:30:00', NULL, NULL),
+(3, 'Tharindi', 'Perera', 'c4961b067d274050e43e26beb9d7d19c', 'tharindi@gmail.com', '3', 'Technical Officer', '1992-02-19', '0711123123', 'user_avatar1453224953-Hydrangeas.jpg', 'cover_pic1453224946-Lighthouse.jpg', 'N', '1', '2015-12-17 18:30:00', NULL, NULL),
+(4, 'Lumesha', 'Perera', 'c4961b067d274050e43e26beb9d7d19c', 'lumesha@gmail.com', '3', 'Technical Officer', '1991-04-26', '0712345678', 'user_avatar1453224891-Chrysanthemum.jpg', 'cover_pic1453224886-Tulips.jpg', 'N', '1', '2015-12-17 18:30:00', NULL, NULL);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

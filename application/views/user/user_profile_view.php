@@ -180,7 +180,13 @@
                         <br></h3>
                         <br>
                         <h4 class="no-margin"><i class="fa fa-envelope"></i>    <?php echo ucfirst($user_detail->user_email) ?></h4>
-                        
+                        <br>
+                        <h4 class="no-margin"><i class="fa fa-smile-o"></i>   <?php echo ($user_detail->user_job) ?></h4>
+                        <br>
+                        <h4 class="no-margin"><i class="fa fa-gift"></i>   <?php echo ($user_detail->user_bday) ?></h4>
+                        <br>
+                        <h4 class="no-margin"><i class="fa fa-phone"></i>   <?php echo ($user_detail->user_contact) ?></h4>
+                        <br>
 
 
 
@@ -251,14 +257,29 @@
                     <div class="row form-row">
                         <div class="col-md-5">
                             <div class="form-group">
-                                <label class="form-label"> Name</label>
+                                <label class="form-label">First Name</label>
                                 <span style="color: red">*</span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="input-with-icon  right">                                       
                                 <i class=""></i>
-                                <input id="user_name" class="form-control" type="text" name="user_fname" value="<?php echo $user_detail->user_name; ?>">                              
+                                <input id="user_fname" class="form-control" type="text" name="user_fname" value="<?php echo $user_detail->user_fname; ?>">                              
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row form-row">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label class="form-label">Last Name</label>
+                                <span style="color: red">*</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-with-icon  right">                                       
+                                <i class=""></i>
+                                <input id="user_lname" class="form-control" type="text" name="user_lname" value="<?php echo $user_detail->user_lname; ?>">                              
                             </div>
                         </div>
                     </div>
@@ -295,7 +316,39 @@
                         </div>
                     </div>
                     
+                    <div class="row form-row">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label class="form-label">Birth day</label>
+                                <span style="color: red">*</span>
+                            </div>
+                        </div>
+                        <div class="input-with-icon  right input-append primary date  no-padding" id="user_bday_edit_dpicker">                                       
+                                    <i class=""></i>
+
+                                    <input class="form-control" type="text" input-append id="user_bday" name="user_bday" readonly="true"  value="<?php echo $user_detail->user_bday; ?>">
+                                    <span class="add-on">
+                                        <span class="arrow"></span>
+                                        <i class="fa fa-th"></i>
+                                    </span>
+                                </div>
+         
+                    </div>
                     
+                    <div class="row form-row">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label class="form-label">Contact</label>
+                                <span style="color: red">*</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-with-icon  right">                                       
+                                <i class=""></i>
+                                <input id="user_contact" class="form-control" type="text" name="user_contact"  value="<?php echo $user_detail->user_contact; ?>">                              
+                            </div>
+                        </div>
+                    </div>
 
 
                     <div id="edit_user_profile_msg" class="form-row"> </div>

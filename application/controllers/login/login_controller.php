@@ -104,7 +104,8 @@ class Login_controller extends CI_Controller {
 //                                print_r(die);
 //                                echo'user_id';              
                 $this->session->set_userdata('USER_FIRST', '1'); //check first time log in and redirect to welcome page
-                $this->session->set_userdata('USER_NAME', $logged_user_details->user_name);            
+                $this->session->set_userdata('USER_FNAME', $logged_user_details->user_fname); 
+                $this->session->set_userdata('USER_LNAME', $logged_user_details->user_lname);
                 $this->session->set_userdata('USER_EMAIL', $logged_user_details->user_email);
                 $this->session->set_userdata('USER_ONLINE', 'Y');
                 $this->session->set_userdata('USER_LOGGED_IN', 'TRUE');

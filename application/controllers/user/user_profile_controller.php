@@ -8,6 +8,8 @@ class User_profile_controller extends CI_Controller {
     function __construct() {
         parent::__construct();
         
+       
+        
             $this->load->model('user/user_model');
             $this->load->model('user/user_service'); 
     }
@@ -54,8 +56,12 @@ class User_profile_controller extends CI_Controller {
 
         $user_model = new user_model();
         $user_service = new user_service();
-        $user_model->set_user_name($this->input->post('user_name', TRUE));
+        $user_model->set_user_fname($this->input->post('user_fname', TRUE));
+        $user_model->set_user_lname($this->input->post('user_lname', TRUE));
         $user_model->set_user_email($this->input->post('user_email', TRUE));
+        $user_model->set_user_job($this->input->post('user_job', TRUE));
+        $user_model->set_user_bday($this->input->post('user_bday', TRUE));
+        $user_model->set_user_contact($this->input->post('user_contact', TRUE));
         
         ;
 
@@ -143,5 +149,7 @@ class User_profile_controller extends CI_Controller {
     }
 
 }
+
+
 
 ?>

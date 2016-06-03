@@ -11,9 +11,12 @@ class User_service extends CI_Model {
     function update_user_profile($user_model) {
 
         $data = array(
-            'user_name' => $user_model->get_user_name(),
+            'user_fname' => $user_model->get_user_fname(),
+            'user_lname' => $user_model->get_user_lname(),
             'user_email' => $user_model->get_user_email(),
-            'user_job' => $user_model->get_user_job()
+            'user_job' => $user_model->get_user_job(),
+            'user_bday' => $user_model->get_user_bday(),
+            'user_contact' => $user_model->get_user_contact(),
             
         );
 
@@ -165,6 +168,14 @@ class User_service extends CI_Model {
         $this->db->where('user_id', $usermodel->get_user_id());
         $result = $this->db->update('lcs_user', $data);
         return $result;
+    }
+    
+    //get user details by user id
+    /*this function use in user controller edit_user_view($ser_id)  function*/
+    function get_user_by_id($user_id) {
+
+        $query = $this->db->get_where('user', array('user_id' => $user_id));
+        return $query->row();
     }
 
 
