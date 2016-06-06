@@ -1,15 +1,15 @@
 
-<!--<li class="" id="upload_files_parent_menu"> 
+<li class="" id="Train_Details"> 
     <a href="javascript:;">
         <i class="fa fa-file-text"></i> 
-        <span class="title">Upload</span> 
+        <span class="title">Train Details</span> 
         <span class="arrow "></span> 
     </a>
     <ul class="sub-menu">
-        <li > <a href="<?php echo site_url(); ?>/upload_files/upload_files_controller/manage_upload_files"> Manage Uploads</a> </li>
+        <li > <a href="<?php echo site_url(); ?>/Train Details/MainLine_Trains_controller/manage_Trains"> Manage Trains</a> </li>
 
     </ul>
-</li> -->
+</li> 
 <?php // }  ?>
 
 <!--<li class="" id="select_file_and_data_sets_parent_menu"> 
