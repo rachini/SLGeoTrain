@@ -4,7 +4,7 @@ class MainLine_Trains_service extends CI_Model{
     
     function __construct() {
         parent::__construct();
-        $this->load->model('MainLine_trains/MainLine_trains_model');
+        $this->load->model('MainLine_Trains/MainLine_Trains_model');
     }
     
     function getTrain_Details($MainLine_Trains_model){

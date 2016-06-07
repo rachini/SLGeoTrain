@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 06, 2016 at 09:11 PM
+-- Generation Time: Jun 07, 2016 at 07:23 PM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -73,6 +73,125 @@ INSERT INTO `gps_info` (`id`, `longitudes`, `latitudes`, `altitude`, `velocity`,
 (3, 79.8792, 6.9375, '500 ft', '60 km/h  North', '2016-05-04 21:47:06', '60 km/h', 'Dematagoda '),
 (4, 79.8663, 6.9295, '50 ft', '60 km/h North', '2016-05-04 20:34:04', '65 km/h', 'Maradana'),
 (5, 79.8505, 6.9335, '50', '60 km/h North', '2016-05-04 18:36:00', '40 km/h', 'Colombo ');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `mainline stations`
+--
+
+CREATE TABLE IF NOT EXISTS `mainline stations` (
+  `Index_No` int(11) NOT NULL,
+  `Station_No` int(11) NOT NULL,
+  `Name` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `Code` varchar(10) CHARACTER SET utf8 NOT NULL,
+  `Distance\km` float NOT NULL,
+  `Speed\kmph` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `mainline stations`
+--
+
+INSERT INTO `mainline stations` (`Index_No`, `Station_No`, `Name`, `Code`, `Distance\km`, `Speed\kmph`) VALUES
+(1, 3, 'Colombo fort', 'FOT', 0, 70),
+(2, 4, 'Maradana', 'MDA', 2.08, 70),
+(3, 1002, 'Dematagoda', 'DMG', 2.46, 70),
+(4, 1005, 'Kelaniya', 'KLA', 3.18, 70),
+(5, 1007, 'Wanawasaa', 'WSL', 1.7, 70),
+(6, 1008, 'Hunupitiya', 'HUN', 1.42, 70),
+(7, 1010, 'Enderamulla', 'EDM', 1.74, 70),
+(8, 1012, 'Horape', 'HRP', 2.4, 70),
+(9, 1014, 'Ragama', 'RGM', 1.44, 70),
+(10, 1016, 'Walpola', 'WPA', 2.58, 70),
+(11, 1017, 'Batuwattha', 'BTU', 1.08, 70),
+(12, 1019, 'Bulugahagoda', 'BGH', 1.56, 70),
+(13, 1021, 'Ganemulla', 'GAM', 1.8, 70),
+(14, 1022, 'Yagoda', 'YGA', 1.84, 70),
+(15, 1026, 'Gampaha', 'GPH', 3.12, 70),
+(16, 1028, 'Daraluwa', 'DRL', 2.4, 70),
+(17, 1030, 'Bemulla', 'BEM', 1.98, 70),
+(18, 1032, 'Magalegoda', 'MGG', 2.25, 70),
+(19, 1034, 'Heendeniya-pattigoda', 'HDP', 1.47, 70),
+(20, 1036, 'Veyangoda', 'VGD ', 1.8, 70),
+(21, 1037, 'Wadurawa', 'WRW', 1.84, 70),
+(22, 1040, 'Keenawala', 'KEN', 2.22, 70),
+(23, 1042, 'Pallewela', 'PLL', 2.34, 70),
+(24, 1044, 'Ganegoda', 'GND', 2.28, 70),
+(25, 1047, 'Wijaya rajadahana', 'WRD', 2.34, 70),
+(26, 1048, 'Mirigama', 'MIR', 1.72, 70),
+(27, 1050, 'Wilwattha', 'WWL', 1.82, 62),
+(28, 1053, 'Bothale', 'BTL', 2.04, 62),
+(29, 1054, 'Ambepussa', 'APS', 2.08, 62),
+(30, 1058, 'Yathalgoda', 'YTG', 3.6, 62),
+(31, 1060, 'Bujomuna', 'BJM', 2.08, 62),
+(32, 1064, 'Alwwa', 'ALW', 3.82, 62),
+(33, 1068, 'Walakumbura', 'WKA', 4.04, 62),
+(34, 1072, 'Polgahawela', 'PLG', 3.4, 62),
+(35, 1076, 'Panaliya', 'PNL', 77.5, 62),
+(36, 1077, 'Thismalpola', 'TSM', 3.58, 62),
+(37, 1079, 'Korossa', 'KSP', 2.28, 62),
+(38, 1083, 'Rambukkana', 'RBK', 3.12, 62),
+(39, 1088, 'Kadigamuwa', 'KMA', 5, 22),
+(40, 1092, 'Gangoda', 'GDA ', 4.28, 22),
+(41, 1094, 'Ihala-kotte', 'IKT', 2.32, 22),
+(42, 1099, 'Balana', 'BNA', 4.92, 22),
+(43, 1104, 'Kadugannawa', 'KGW', 4.44, 22),
+(44, 1108, 'Pilimathalawa', 'PLT', 3.84, 30),
+(45, 1113, 'Peradeniya Junction', 'PDA', 5.4, 30),
+(46, 1118, 'Gelioya', 'GEY', 4.58, 54),
+(47, 1125, 'Gampola', 'GPL', 7.46, 54),
+(48, 1129, 'Thambiligala', 'TBL', 3.9, 30),
+(49, 1132, 'Ulapane', 'ULP', 3.38, 30),
+(50, 1140, 'Navalapitiya', 'NVP', 6.96, 30),
+(51, 1145, 'Inguru oya ', 'INO', 5.76, 22),
+(52, 1151, 'Galaboda', 'GBD', 5.72, 22),
+(53, 1160, 'Watawala ', 'WLA', 9.4, 22),
+(54, 0, 'Ihala=-Watawala', 'IWL', 1.88, 22),
+(55, 1166, 'Rozella', 'RZL', 3.58, 22),
+(56, 1173, 'Hatton', 'HTN', 7.08, 22),
+(57, 1178, 'Kotagala', 'KGA', 5.04, 22),
+(58, 1186, 'Thalawakelle', 'TKL', 7.34, 22),
+(59, 1192, 'Watagoda', 'WTG', 6.76, 22),
+(60, 1197, 'Great western', 'GWN', 5.1, 22),
+(61, 1201, 'Radella', 'RDL', 3.86, 22),
+(62, 1205, 'Nanu oya', 'NOA', 3.74, 22),
+(63, 1210, 'Parakumpura', 'PKP', 4.1, 22),
+(64, 1220, 'AmbewelaB', 'ABL', 11.96, 22),
+(65, 1223, 'Pattipola', 'PPL', 3.82, 22),
+(66, 1230, 'Ohiya', 'OHA', 4.62, 22),
+(67, 1239, 'Idalgashinna', 'IGH', 8.88, 22),
+(68, 1246, 'Haputhale', 'HPT', 7.38, 22),
+(69, 1251, 'Diyathalawa', 'DLA', 5.02, 22),
+(70, 1257, 'Bandarawela', 'BDA', 6.04, 22),
+(71, 1260, 'Kinigama', 'KNM', 2.28, 22),
+(72, 1263, 'Heel oya', 'HLO', 3.84, 22),
+(73, 1270, 'Ella', 'ELL', 6.19, 22),
+(74, 1276, 'Demodara', 'DDR', 7.11, 22),
+(75, 1285, 'Hali ella', 'HLA', 2.99, 22),
+(76, 1290, 'Badulla ', 'BDA', 5.63, 22);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `mainline_trains`
+--
+
+CREATE TABLE IF NOT EXISTS `mainline_trains` (
+  `Train_No` int(11) NOT NULL,
+  `Starting_Station` varchar(20) CHARACTER SET utf8 NOT NULL,
+  `End_station` varchar(10) NOT NULL,
+  `Type` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `Starting_Time` time NOT NULL,
+  `Effected_Trains` varchar(100) CHARACTER SET utf8 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `mainline_trains`
+--
+
+INSERT INTO `mainline_trains` (`Train_No`, `Starting_Station`, `End_station`, `Type`, `Starting_Time`, `Effected_Trains`) VALUES
+(1005, 'FOT', 'BAD', 'Daily', '05:55:00', '1030/1036/1024/1541/1016/1006/1008/1596\r\n');
 
 -- --------------------------------------------------------
 
@@ -158,7 +277,7 @@ CREATE TABLE IF NOT EXISTS `statistics` (
   `ip` varchar(300) NOT NULL,
   `browser` varchar(300) NOT NULL,
   PRIMARY KEY (`statistics_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=854 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=868 ;
 
 --
 -- Dumping data for table `statistics`
@@ -1020,7 +1139,21 @@ INSERT INTO `statistics` (`statistics_id`, `user_id`, `action`, `date`, `uri`, `
 (850, 0, 'index', 1465222939, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
 (851, 0, 'view_profile', 1465222948, 'user/user_profile_controller/view_profile', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
 (852, 0, 'logout', 1465222953, 'login/login_controller/logout', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
-(853, 0, 'index', 1465222953, 'login/login_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36');
+(853, 0, 'index', 1465222953, 'login/login_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'),
+(854, 0, 'login_controller', 1465302256, '', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'),
+(855, 0, 'login_controller', 1465303390, '', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'),
+(856, 0, 'authenticate_user', 1465303404, 'login/login_controller/authenticate_user', '{"login_username":"rachini94perera@gmail.com","login_password":"abc123@#"}', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'),
+(857, 0, 'index', 1465303407, 'login/login_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'),
+(858, 0, 'index', 1465303407, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'),
+(859, 0, 'view_profile', 1465303419, 'user/user_profile_controller/view_profile', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'),
+(860, 0, 'login_controller', 1465303890, '', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'),
+(861, 0, 'index', 1465303891, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'),
+(862, 0, 'index', 1465303894, 'dashboard/dashboard_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'),
+(863, 0, 'logout', 1465304550, 'login/login_controller/logout', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'),
+(864, 0, 'index', 1465304550, 'login/login_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'),
+(865, 0, 'index', 1465304552, 'login/login_controller', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'),
+(866, 0, 'login_controller', 1465319671, '', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'),
+(867, 0, 'login_controller', 1465319756, '', '', '::1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36');
 
 -- --------------------------------------------------------
 

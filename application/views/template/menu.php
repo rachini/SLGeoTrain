@@ -6,7 +6,7 @@
         <span class="arrow "></span> 
     </a>
     <ul class="sub-menu">
-        <li > <a href="<?php echo site_url(); ?>/MainLine_Train/MainLine_Trains_controller/manage_Trains"> Manage Trains</a> </li>
+        <li > <a href="<?php echo site_url(); ?>/MainLine_Trains/MainLine_Trains_controller/manage_Trains"> Manage Trains</a> </li>
 
     </ul>
 </li> 
