@@ -1,16 +1,16 @@
 
-<li class="" id="Train_Details"> 
+<li class="" id="trains_parent_menu"> 
     <a href="javascript:;">
-        <i class="fa fa-file-text"></i> 
+        <i class="fa fa-tasks"></i> 
         <span class="title">Train Details</span> 
         <span class="arrow "></span> 
     </a>
     <ul class="sub-menu">
-        <li > <a href="<?php echo site_url(); ?>/Train Details/MainLine_Trains_controller/manage_Trains"> Manage Trains</a> </li>
+        <li > <a href="<?php echo site_url(); ?>/MainLine_Train/MainLine_Trains_controller/manage_Trains"> Manage Trains</a> </li>
 
     </ul>
 </li> 
-<?php // }  ?>
+<?php   ?>
 
 <!--<li class="" id="select_file_and_data_sets_parent_menu"> 
     <a href="javascript:;">

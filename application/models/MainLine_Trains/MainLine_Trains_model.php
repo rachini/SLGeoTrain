@@ -1,6 +1,6 @@
 <?php
 
-class MainLine_Trains extends CI_Model{
+class MainLine_Trains_model extends CI_Model{
     
     var $Train_No;
     var $Starting_Station;
