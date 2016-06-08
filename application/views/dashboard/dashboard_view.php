@@ -22,25 +22,25 @@
                     mapTypeId: google.maps.MapTypeId.TERRAIN
                 });
 
-                var marker = new google.maps.Marker({
-                    position: {lat: 6.9335, lng: 79.8505},
-                    map: map,
-                    title1: 'Colombo Fort'
-                });
-                var marker2 = new google.maps.Marker({
-                    position: {lat: 6.9295, lng: 79.8663},
-                    map: map,
-                    title2: 'Maradana'
-                });
+//                var marker = new google.maps.Marker({
+//                    position: {lat: 6.9335, lng: 79.8505},
+//                    map: map,
+//                    title1: 'Colombo Fort'
+//                });
+//                var marker2 = new google.maps.Marker({
+//                    position: {lat: 6.9295, lng: 79.8663},
+//                    map: map,
+//                    title2: 'Maradana'
+//                });
 //                var marker3 = new google.maps.Marker({
 //                    position: {lat: 6.9375, lng: 79.8792},
 //                    map: map,
 //                    title3: 'Dematagoda'
 //                });
 
-                marker.setMap(map);
-                marker2.setMap(map);
-//                marker3.setMap(map);
+//                      marker.setMap(map);
+//                      marker2.setMap(map);
+//                      marker3.setMap(map);
             }
 
 

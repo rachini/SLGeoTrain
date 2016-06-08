@@ -10,24 +10,30 @@ class Gps_info_controller extends CI_Controller {
         
         $this->load->model('gps_info/gps_info_model');
         $this->load->model('gps_info/gps_info_service');
+        $this->load->library("Googlemaps.php");
+        $this->load->library("visualization.js");
         
-        $this->load->model('static_distance/static_distance_model');
-        $this->load->model('static_distance/static_distance_service');
+//        $this->load->model('static_distance/static_distance_model');
+//        $this->load->model('static_distance/static_distance_service');
                
     }
     
-    function calculate_distance(){
-    
-        $gps_info_model = new gps_info_model();
-        $gps_info_service = new gps_info_service();
-        $static_distance_model = new static_distance_model();
-        $static_distance_service = new static_distance_service();
-        
-        foreach ($result as $item) { 
-            $multiplied = $item['speed'] * $item['timestamp']; }
-        
-        
-        
+    function view_coordinates() {
+       
+        $perm = Access_controll_service::check_access('VIEW_COORDINATES');
+        if ($perm) {
+            $gps_info_service = new Gps_info_service();
+
+            
+            $data['coordinates']=  json_encode($gps_info_service->get_all_coordinates_for_map());
+
+            $parials = array('content' => 'dashboard/dashboard_view');
+            $this->template->load('template/main_template', $parials,$data);
+        } else {
+            $this->template->load('template/access_denied_page');
+        }
     }
+    
+    
 }
 
