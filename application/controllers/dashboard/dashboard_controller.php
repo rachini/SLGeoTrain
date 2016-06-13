@@ -21,7 +21,7 @@ class Dashboard_controller extends CI_Controller {
         }
     }
 
-    function index() {
+    function index() { 
         $user_service = new User_service();
 
         $data['users'] = $this->session->userdata('USERS');

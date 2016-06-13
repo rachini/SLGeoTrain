@@ -1,5 +1,6 @@
-<!DOCTYPE html>
 <html>
+<h3>code for map <?php echo $title;?></h3>
+
     <head>
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
         <meta charset="utf-8">
@@ -14,6 +15,7 @@
     <body  id="map_content"> 
         <div id="map"></div>
         <script>
+
 
             var icon = new google.maps.MarkerImage("http://maps.google.com/mapfiles/ms/micons/blue.png",
                     new google.maps.Size(32, 32), new google.maps.Point(0, 0),
@@ -59,12 +61,11 @@
 
 
 
-                var marker = new google.maps.Marker({
-                    position: {lat: 6.9271, lng: 79.8612},
-                    map: map,
-                    title1: 'Colombo Fort'
-                    //map.infoWindow(lat,lng),
-                });
+//                var marker = new google.maps.Marker({
+//                    position: {lat: 6.9335, lng: 79.8505},
+//                    map: map,
+//                    title1: 'Colombo Fort'
+//                });
 //               var marker2 = new google.maps.Marker({
 //                    position: {lat: 6.9295, lng: 79.8663},
 //                    map: map,
@@ -76,7 +77,7 @@
 //                   title3: 'Dematagoda'
 //               });
 //
-                marker.setMap(map);
+//                marker.setMap(map);
 //                marker2.setMap(map);
 //                marker3.setMap(map);
             }
@@ -84,17 +85,6 @@
 
 
         </script>
-        
-<!--        <div class="col-md-6   col-sm-6">
-
-                    <div class="map-marker">
-                        
-                        
-                        <h4 class="no-margin"><i class="fa fa-map-marker"></i>   <?php echo ($coordinates->latitude) ?><?php echo ($coordinates->longitude) ?></h4>
-                        <br>
-                    </div>
-
-                </div>-->
 
 
         <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
@@ -102,7 +92,7 @@
         
         <input type="button" name="x" id="x" onclick="load_map()"/>
     </body>
-</html>
+
 
 
 
