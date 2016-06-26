@@ -70,7 +70,7 @@ class Login_controller extends CI_Controller {
             
         }
 
-        // 2 = Active Directory Authentication
+        
         if ($login_option == 2) {
            
 
