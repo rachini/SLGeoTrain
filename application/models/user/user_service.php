@@ -177,6 +177,29 @@ class User_service extends CI_Model {
         $query = $this->db->get_where('user', array('user_id' => $user_id));
         return $query->row();
     }
+    
+    function update_user($user_model) {
+
+        $data = array('user_id' => $user_model->get_user_id(),
+            'user_fname' => $user_model->get_user_fname(),
+            'user_lname' => $user_model->get_user_lname(),
+            'user_password' => $user_model->get_user_password(),
+            'user_email' => $user_model->get_user_email(),
+            'user_type' => $user_model->get_user_type(),
+            'user_job' => $user_model->get_user_job(),
+            'user_bday' => $user_model->get_user_bday(),
+            'user_contact' => $user_model->get_user_contact(),
+            'user_avatar' => $user_model->get_user_avatar(),
+            'user_cover_image' => $user_model->get_user_cover_image(),
+            'updated_by' => $user_model->get_updated_by(),
+            'updated_date' => $user_model->get_updated_date(),
+        );
+
+        $this->db->where('user_id', $user_model->get_user_id());
+        return $this->db->update('user', $data);
+    }
+    
+    
 
 
     
